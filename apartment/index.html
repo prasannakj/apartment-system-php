@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <style media="screen">
+    .container a{
+      float: left;
+    }
+
+  </style>
+  <script>
+
+        function mycopy() {
+          console.log("copy work!!");
+        }
+        function func(){
+          alert("not developed yet... under Development!!!");
+          window.location.href='index.html';
+        }
+        function fload(){
+          console.log("loaded the page");
+        }
+        function funload(){
+          console.log("Unloaded the page");
+        }
+        function ferror(){
+          console.log("Error loading Image");
+        }
+        function fover() {
+          $("#img").text("This is logo");
+        }
+        function fout() {
+          $("#img").text("");
+        }
+          $(document).ready(function(){
+
+          $('#c1').hover(
+          function() {
+          $(this).css("border-radius","15px");
+          $(this).css("background-color","#c8d6e5");
+          $(this).css("padding","10px");
+        },
+        function() {
+          $(this).css("background-color","lightblue");
+        }
+      );
+      $('#c2').hover(
+      function() {
+      $(this).css("border-radius","15px");
+      $(this).css("background-color","#c8d6e5");
+      $(this).css("padding","10px");
+    },
+    function() {
+      $(this).css("background-color","lightblue");
+    }
+  );
+  $('#c3').hover(
+  function() {
+  $(this).css("border-radius","15px");
+  $(this).css("background-color","#c8d6e5");
+  $(this).css("padding","10px");
+},
+function() {
+  $(this).css("background-color","lightblue");
+}
+);
+      });
+  </script>
+
+</head>
+<body  onload="fload()" onunload="funload()" >
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark " >
+    <ul class="navbar-nav " >
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="users/login.php">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="users/reg.php">Register</a>
+      </li>
+      <li class="nav-item">
+        <a href="gallary.html" class="nav-link">Gallary</a>
+      </li>
+      <li class="nav-item">
+        <a href="about.html" class="nav-link">About us</a>
+      </li>
+    </ul>
+  </nav>
+<div class="jumbotron text-center">
+  <p id="img"></p>
+  <img class="rounded" src="logo.png" alt="logo" onmouseenter="fover()" onmouseleave="fout()" onerror="ferror()">
+  <h1 oncopy="mycopy()">  XYZ Appartments </h1>
+  <p>A web portal to make your work easier !</p>
+  <iframe src=" https://www.youtube.com/v/0y4rXoWrJlw " ></iframe>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" id="c1" >
+      <h3>1. Donation</h3>
+      <p>Even your small contibution can make big difference </p>
+      <p>Make your mave here...</p>
+      <a href="#"><button class= "btn btn-success" type="button" onclick="func()" name="button">Donate</button></a>
+    </div>
+    <div class="col-sm-4" id="c2">
+      <h3>2. Pay Maintenance</h3>
+      <p>Pay your maintenance and dues <br> on the go</p>
+      <p>we provide you the safest way here...</p>
+      <a href="#"><button class= "btn btn-success" type="button" onclick="func()" name="button">Pay</button></a>
+    </div>
+    <div class="col-sm-4" id="c3">
+      <h3>3. Make a complaint</h3>
+      <p>Complaints are always welcomed</p>
+      <p>you can help us improve your comfortness...</p>
+      <a href="#"><button class= "btn btn-success" type="button" onclick="func()" name="button">Complaint</button></a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

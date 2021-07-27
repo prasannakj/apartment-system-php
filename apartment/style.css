@@ -1,0 +1,23 @@
+body{
+  background-color: lightblue ;
+}
+.btn{
+  border : 2px solid black;
+  float: left;
+}
+.jumbotron {
+  background-color: #c8d6e5;
+}
+.rounded {
+  width:80px;
+  border : 1px solid black;
+}
+a{
+  float: right;
+}
+li{
+  float: right;
+}
+ul{
+  float: right;
+}
